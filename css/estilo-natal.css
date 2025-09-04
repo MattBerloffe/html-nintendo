@@ -1,0 +1,60 @@
+/* Estilo Natalino */
+
+:root {
+    --cor-vermelha: #d9232d;
+    --cor-verde: #00642e;
+    --cor-fundo: #fffcf2; /* Um branco 'aconchegante' */
+    --cor-texto: #333;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 3.5rem;
+    color: var(--cor-vermelha);
+}
+
+.card-title {
+    color: var(--cor-verde);
+    font-weight: bold;
+}
+
+/* --- Componentes Bootstrap customizados --- */
+.navbar, footer {
+    background-color: var(--cor-verde);
+}
+
+.navbar-brand {
+    font-family: 'Mountains of Christmas', serif;
+    font-size: 1.8rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+    box-shadow: 0px 4px 15px rgba(217, 35, 45, 0.3); /* Sombra vermelha suave */
+}
+
+/* Imagens do placeholder com cores natalinas */
+.card-img-top[alt*="notícia 1"] { content: url('https://placehold.co/600x400/d9232d/white?text=Feliz+Natal'); }
+.card-img-top[alt*="notícia 2"] { content: url('https://placehold.co/600x400/00642e/white?text=Boas+Festas'); }
+
+
+.btn-primary {
+    background-color: var(--cor-vermelha);
+    border-color: var(--cor-vermelha);
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-verde);
+    border-color: var(--cor-verde);
+}

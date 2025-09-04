@@ -1,0 +1,42 @@
+/* Estilo Padrão */
+
+:root {
+    --cor-primaria: #0056b3; /* Um azul mais forte */
+    --cor-fundo: #f8f9fa; /* Cinza claro do Bootstrap */
+    --cor-texto: #212529; /* Preto suave do Bootstrap */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, .card-title {
+    color: var(--cor-primaria);
+}
+
+/* --- Componentes Bootstrap customizados --- */
+.navbar, footer {
+    background-color: var(--cor-primaria);
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.btn-primary:hover {
+    background-color: #004494; /* Azul um pouco mais escuro */
+    border-color: #004494;
+}
